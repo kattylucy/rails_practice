@@ -27,6 +27,12 @@ class PagesController < ApplicationController
         redirect_to @page
     end
 
+    def destroy
+        @page = Page.find(params[:id])
+        @page.destroy
+        redirect_to home_path
+    end
+
 
     private
 

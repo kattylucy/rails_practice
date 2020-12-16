@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   post "/pages", to: 'pages#create'
 
   patch '/pages/:id', to: 'pages#update'
+
+  delete '/pages/:id', to: 'pages#destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
