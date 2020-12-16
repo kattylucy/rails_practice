@@ -1,20 +1,3 @@
-<%= form_for(@page) do |f| %>
-    <div class="field">
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-    </div>
+<h1> <%= @page.title %> Edit </h1>
 
-    <div class="field">
-        <%= f.label :body %>
-        <%= f.text_area :body %>
-    </div>
-
-    <div class="field">
-        <%= f.label :slug %>
-        <%= f.text_area :slug %>
-    </div>
-
-    <div>
-        <%= f.submit %>
-    </div>
-<% end %>
+<%= render 'form', page: @page %>
